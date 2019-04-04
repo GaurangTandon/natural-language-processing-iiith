@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h3>Experiments Page</h3>
+    <h4>Sentences</h4>
+    {% for sentence in sentences %}
+        <div>{{ sentence }}</div>
+    {% endfor %}
+    <h4>Chunks</h4>
+    {% for chunk in chunks %}
+        <div>{{ chunk }}</div>
+    {% endfor %}
+{% endblock %}

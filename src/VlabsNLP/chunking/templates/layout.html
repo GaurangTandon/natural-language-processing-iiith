@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block page %}
+    <h2>The NLP Chunking Lab</h2>
+    <ul>
+        <li><a href="{% url 'chunking.home' %}">Home</a></li>
+        <li><a href="{% url 'chunking.introduction' %}">Introduction</a></li>
+        <li><a href="{% url 'chunking.experiment' %}">Experiment</a></li>
+        <li><a href="{% url 'chunking.objective' %}">Objective</a></li>
+        <li><a href="{% url 'chunking.procedure' %}">Procedure</a></li>
+        <li><a href="{% url 'chunking.theory' %}">Theory</a></li>
+        <li><a href="{% url 'chunking.readings' %}">Readings</a></li>
+    </ul>
+    {% block content %}
+    {% endblock %}
+{% endblock %}
